@@ -26,6 +26,7 @@ fun main() {
     for (i in minSeatId..maxSeatId) {
         if (!allSeatsIds.contains(i)) {
             println(i)
+            break
         }
     }
 
