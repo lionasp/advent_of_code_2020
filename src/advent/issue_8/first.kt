@@ -5,7 +5,7 @@ import java.io.File
 class Instruction(val id: Int, val name: String, val value: Int)
 
 
-fun loadInstructions(lines: List<String>): List<Instruction> {
+fun loadInstructions(lines: List<String>): MutableList<Instruction> {
     val instructions = mutableListOf<Instruction>()
     for (i in lines.indices) {
         val split = lines[i].split(" ")
